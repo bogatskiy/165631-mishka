@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Anton Bogatskiy](https://up.htmlacademy.ru/adaptive/7/user/165631).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Ожерельев](https://htmlacademy.ru/profile/id29002).
 
 ---
 
