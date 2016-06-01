@@ -6,7 +6,7 @@
   </head>
   <body>
       <header class="page-header">
-          <img class="page-logo" src="http://placehold.it/86x35">
+          <a href="#"><img class="page-logo" src="http://placehold.it/86x35"></a>
           <nav class="main-nav">
               <ul class="main-nav__list">
                   <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
@@ -24,75 +24,54 @@
               <p class="form__text">
                   Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
               </p>
-
               <div class="form__item">
                   <div class="form__item-tittle">
-
+                    Тип
                   </div>
                   <div class="form__list">
-
+                      <label for="radio__interior"><input type="radio" name="form__type" value="" id="radio__interior" checked>Аксессуар для интерьера</label>
+                      <label for="radio__interior"><input type="radio" name="form__type" value="" id="radio__toy" checked>Детские игрушки</label>
                   </div>
-                  <label for=""><input type="button" name="name" value=""></label>
               </div>
-                              
-              <div class="form__group">
-                  <div class="input-box">
-                      <div class="input-box__title">
-                        Радио
-                      </div>
-                      <div class="input-box__list">
-                          <div class="input-box__item b-radio">
-                              <label for="radio__interior"><input type="radio" name="form__type" value="" id="radio__interior" checked>Аксессуар для интерьера</label>
-                          </div>
-                          <div class="input-box__item b-radio">
-                              <label for="radio__interior"><input type="radio" name="form__type" value="" id="radio__interior" checked>Аксессуар для интерьера</label>
-                          </div>
-                      </div>
+              <div class="form__item">
+                  <div class="form__item-tittle">
+                    Цвет
                   </div>
-                  <div class="input-box">
-                      <div class="input-box__title">
-                        Чекбокс
-                      </div>
-                      <div class="input-box__list">
-                          <div class="input-box__item b-check">
-                              <label for="white"><input id="white" type="checkbox" name="white" value="">Белый</label>
-                          </div>
-                          <div class="input-box__item b-check">
-                              <label for="white"><input id="white" type="checkbox" name="white" value="">Белый</label>
-                          </div>
-                      </div>
+                  <div class="form__list">
+                      <label for="white"><input id="white" type="checkbox" name="white" value="">Белый</label>
+                      <label for="gray"><input id="gray" type="checkbox" name="gray" value="">Серый</label>
+                      <label for="tiffani"><input id="tiffani" type="checkbox" name="tiffani" value="">«Тиффани»</label>
+                      <label for="black"><input id="black" type="checkbox" name="black" value="">Черный</label>
+                      <label for="pink"><input id="pink" type="checkbox" name="pink" value="">Розовый</label>
+                      <label for="orange"><input id="orange" type="checkbox" name="orange" value="">Оранжевый</label>
                   </div>
-
-                  <label for="radio__interior"><input type="radio" name="form__type" value="" id="radio__interior" checked>Аксессуар для интерьера</label>
-                  <label for="radio__toy"><input type="radio" name="form__type" value="" id="radio__toy">Детская игрушка</label>
               </div>
-              <div class="form__color">
-                  <label for="white"><input id="white" type="checkbox" name="white" value="">Белый</label>
-                  <label for="gray"><input id="gray" type="checkbox" name="gray" value="">Серый</label>
-                  <label for="tiffani"><input id="tiffani" type="checkbox" name="tiffani" value="">«Тиффани»</label>
-                  <label for="black"><input id="black" type="checkbox" name="black" value="">Черный</label>
-                  <label for="pink"><input id="pink" type="checkbox" name="pink" value="">Розовый</label>
-                  <label for="orange"><input id="orange" type="checkbox" name="orange" value="">Оранжевый</label>
+              <div class="form__item">
+                  <div class="form__item-tittle">
+                    Тел
+                  </div>
+                  <div class="form__list">
+                      <input class="" type="tel" name="name" value="" placeholder="+7 XXX XX XX">
+                  </div>
               </div>
-              <div class="form-fio">
-                  <label class="fio__label fio__label--surname" for="surname">Фамилия:</label>
-                  <input class="fio__input fio__input--surname" type="text" name="lastname" value="" id="surname">
-                  <label class="fio__label fio__label--name" for="name">Имя:</label>
-                  <input class="fio__input fio__input--name" type="text" name="name" value="" id="name">
-                  <label class="fio__label fio__label--patronymic" for="patronymic">Отчество:</label>
-                  <input class="fio__input fio__input--patronymic" type="text" name="patronymic" value="" id="patronymic">
+              <div class="form__item">
+                  <div class="form__item-tittle">
+                    E-MAIL
+                  </div>
+                  <div class="form__list">
+                      <input type="email" name="name" value="" placeholder="Ваш e-mail">
+                  </div>
               </div>
-              <div class="form__tel">
-                  <input class="" type="tel" name="name" value="" placeholder="+7 XXX XX XX">
-              </div>
-              <div class="form__email">
-                  <input type="email" name="name" value="" placeholder="Ваш e-mail">
-              </div>
-              <div class="form__dop">
-                  <textarea name="name" rows="8" cols="40"></textarea>
+              <div class="form__item">
+                  <div class="form__item-tittle">
+                    ДОП
+                  </div>
+                  <div class="form__list">
+                      <textarea name="name" rows="8" cols="40"></textarea>
+                  </div>
               </div>
               <button type="submit" name="button">отправить заказ</button>
-          </form>
+        </form>
       </main>
       <footer class="page__footer">
           <p class="page-footer__social">
