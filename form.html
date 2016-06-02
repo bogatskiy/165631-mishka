@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Вязание на заказ</title>
+  </head>
+  <body>
+      <header class="page-header">
+          <a href="index.html"><img class="page-logo" src="http://placehold.it/86x35"></a>
+          <nav class="main-nav">
+              <ul class="main-nav__list">
+                  <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+              </ul>
+              <ul class="nav-user-block__list">
+                  <li class="nav-user-block__item"><a class="nav-user-block__link nav-user-block__link--search" href="#">Поиск по сайту</a></li>
+                  <li class="nav-user-block__item"><a class="nav-user-block__link nav-user-block__link--cart" href="#">Корзина: <span>пока пуста</span></a></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <form class="form" action="#" method="post">
+              <h1 class="form__title">Вязание на заказ</h1>
+              <p class="form__text">
+                  Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
+              </p>
+              <div class="form__item">
+                  <div class="form__item-tittle">
+                    Тип
+                  </div>
+                  <div class="form__list">
+                      <label for="radio__interior"><input type="radio" name="form__type" value="" id="radio__interior" checked>Аксессуар для интерьера</label>
+                      <label for="radio__toy"><input type="radio" name="form__type" value="" id="radio__toy">Детские игрушки</label>
+                  </div>
+              </div>
+              <div class="form__item">
+                  <div class="form__item-tittle">
+                    Цвет
+                  </div>
+                  <div class="form__list">
+                      <label for="white"><input id="white" type="checkbox" name="white" value="">Белый</label>
+                      <label for="gray"><input id="gray" type="checkbox" name="gray" value="">Серый</label>
+                      <label for="tiffani"><input id="tiffani" type="checkbox" name="tiffani" value="">«Тиффани»</label>
+                      <label for="black"><input id="black" type="checkbox" name="black" value="">Черный</label>
+                      <label for="pink"><input id="pink" type="checkbox" name="pink" value="">Розовый</label>
+                      <label for="orange"><input id="orange" type="checkbox" name="orange" value="">Оранжевый</label>
+                  </div>
+              </div>
+              <div class="form__item">
+                  <div class="form__item-tittle">
+                    Тел
+                  </div>
+                  <div class="form__list">
+                      <input class="" type="tel" name="name" value="" placeholder="+7 XXX XX XX">
+                  </div>
+              </div>
+              <div class="form__item">
+                  <div class="form__item-tittle">
+                    E-MAIL
+                  </div>
+                  <div class="form__list">
+                      <input type="email" name="name" value="" placeholder="Ваш e-mail">
+                  </div>
+              </div>
+              <div class="form__item">
+                  <div class="form__item-tittle">
+                    ДОП
+                  </div>
+                  <div class="form__list">
+                      <textarea name="name" rows="8" cols="40"></textarea>
+                  </div>
+              </div>
+              <button type="submit" name="button">отправить заказ</button>
+        </form>
+      </main>
+      <footer class="page__footer">
+          <p class="page-footer__social">
+              <span class="social-links">
+              <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              </span>
+          </p>
+          <p class="page-footer__copyright">
+              Разработано:
+              <a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </p>
+      </footer>
+  </body>
+</html>
