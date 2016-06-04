@@ -1,0 +1,45 @@
+.feedback {
+        margin-bottom: 30px;
+        &__item {
+        margin-bottom: 30px;
+        }
+    &__text {
+        margin: 0;
+        font-size: 14px;
+        line-height: 30px;
+        color: #444444;
+    }
+    &__name {
+        font-size: 14px;
+        line-height: 24px;
+        color: #000;
+        font-weight: bold;
+    }
+    &__address {
+        display: block;
+        font-size: 14px;
+        line-height: 30px;
+        color: #444;
+    }
+    &__slider {
+        position: relative;
+        font-size: 0;
+        line-height: 0;
+        margin-bottom: 30px;
+        border: solid 1px black;
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 50px;
+            display: block;
+            content: "";
+            border-right: 1px solid black;
+        }
+        &-arrow {
+            display: inline-block;
+            width: 50%;
+            height: 50px;
+        }
+    }
+}
