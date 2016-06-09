@@ -1,44 +1,176 @@
 .featured {
-    margin-bottom: 30px;
-    &__title {
-        margin-bottom: 10px;
-    }
-    &__stocks {
-        font-size: 16px;
-        line-height: 16px;
-        color: #63d1bb;
-        text-transform: uppercase;
-        font-weight: normal;
-        margin-bottom: 10px;
-    }
-    &__text {
-        margin: 0;
-        font-size: 14px;
-        line-height: 24px;
-        color: #444444;
-        margin-bottom: 10px;
-    }
-    &__table {
-        font-size: 14px;
-        line-height: 20px;
-        color: #444444;
-        margin-bottom: 10px;        
-    }
-    &__cell {
-        vertical-align: top;
-        padding: 10px 0;
-    }
-    &__price {
-        font-size: 16px;
-        line-height: 24px;
-        color: #444444;
-        font-weight: bold;
-    }
-    &__img {
+  margin-bottom: 35px;
+}
 
-        line-height: 0;
-        & img {
-            width: 100%;
-        }
+.featured__inner {
+  .container();
+}
+
+.featured__cell--param {
+  width: 38.5%;
+}
+
+.featured__title {
+  .title();
+  margin-bottom: 10px;
+}
+
+.featured__stocks {
+  font-size: 16px;
+  line-height: 16px;
+  color: #63d1bb;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  & br {
+    display: none;
+  }
+}
+
+.featured__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #444444;
+  margin-bottom: 10px;
+}
+
+.featured__table {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin-bottom: 28px;
+}
+
+.featured__row {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+}
+
+.featured__cell {
+  padding: 10px 0;
+}
+
+.featured__img {
+  width: 260px;
+  margin: 0 auto;
+  line-height: 0;
+}
+
+.featured__img-main {
+  display: none;
+}
+
+.featured__price {
+  padding: 25px 0;
+  font-family: "Verdana";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #444444;
+}
+
+@media @tablet-widths {
+  .featured {
+    margin-bottom: 60px;
+  }
+
+  .featured__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  .featured__title-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .featured__title {
+    margin-bottom: 0;
+  }
+
+  .featured__stocks {
+    text-align: center;
+    margin-bottom: 0;
+    margin-right: 30px;
+    & br {
+      display: block;
+    }
+  }
+
+  .featured__description-wrap {
+    width: 43.4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .featured__text {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+
+  .featured__table {
+    font-size: 15px;
+  }
+
+  .featured__img-main {
+    display: block;
+    width: 50%;
+    max-height: 417px;
+    background-image: url("../img/triple-set-mobile@3x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .featured__img {
+    display: none;
+  }
+
+  .featured__price {
+    font-size: 18px;
+  }
+}
+
+
+@media @desktop-widths {
+    .featured {
+      margin-bottom: 65px;
+    }
+    
+    .featured__title-wrap {
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+      z-index: 1;
+      margin-bottom: 65px;
+    }
+
+    .featured__stocks {
+      width: 16.66%;
+      margin-right: 0;
+    }
+
+    .featured__description-wrap {
+      margin-left: 16.66%;
+      width: 27.8%
+    }
+
+    .featured__text {
+      margin-bottom: 65px;
+    }
+
+    .featured__img-main {
+      margin-top: -175px;
+      width: 50%;
+      max-height: 636px;
     }
 }

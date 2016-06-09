@@ -8,19 +8,20 @@
         margin: 0;
         &--social {
             font-size: 0;
-            line-height: 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         }
     }
+    &__links-wrap {
+      display: flex;
+      justify-content: space-around;
+    }
     &__social-link {
-        display: inline-block;
-        vertical-align: top;
+        display: block;
         width: 20px;
         height: 20px;
         background-color: red;
-        margin-right: 20px;
-        &:last-of-type {
-            margin-right: 0;
+        &--fb {
+          margin: 0 25px;
         }
     }
     &__copyright-logo {
@@ -32,4 +33,8 @@
     &__copyright-text {
         display: inline-block;
     }
+}
+
+.page-footer__inner {
+  .container();
 }
