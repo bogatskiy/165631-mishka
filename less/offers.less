@@ -1,0 +1,150 @@
+.header-title-table {
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+}
+
+
+.header-title__fon {
+  padding-top: 40px;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+
+.header-title-table__item {
+  display: flex;
+  min-height: 103px;
+  padding: 0 30px;
+  align-items: center;
+  text-decoration: none;
+  &:hover .header-title-table__link {
+    margin-top: -5px;
+  }
+}
+
+.header-title-table__item--interior {
+  background-color: @color-interior;
+  &:hover {
+    background-color: lighten(@color-interior, 5%);
+  }
+}
+
+.header-title-table__item--toys {
+  background-color: @color-toys;
+  &:hover {
+    background-color: darken(@color-toys, 5%);
+  }
+}
+
+.header-title-table__link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+
+
+
+
+@media @tablet-widths {
+
+  .header-title__item--visual-table {
+    display: block;
+  }
+
+  .header-title__list-wrapper {
+    .container()
+  }
+
+  .header-title__list {
+    .menu-list();
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-title__link {
+    .menu-link();
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+
+  .header-title__link--catalog {
+    margin-right: 30px;
+  }
+
+  .header-title__delivery-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+  .header-title__item {
+    text-align: left;
+  }
+
+  .header-title__item--delivery {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .header-title-table {
+    .container();
+    flex-direction: row;
+    margin-top: 358px;
+  }
+
+  .header-title-table__item {
+    width: 50%;
+    padding: 0 35px;
+    min-height: 119px;
+  }
+
+  .header-title__fon {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    padding-top: 134px;
+    margin-top: -90px;
+  }
+}
+
+@media @desktop-widths {
+  .header-title {
+    margin-top: 0;
+  }
+
+  .header-title__item--visual-table {
+    display: none;
+  }
+
+  .header-title__item--visual-desk {
+    display: block;
+  }
+
+  .header-title__link--catalog {
+    margin-right: 0;
+  }
+
+  .header-title__link--catalog {
+    min-width: 200px;
+  }
+
+  .header-title__fon {
+    padding-top: 125px;
+    background-image: url("../img/hero-mobile@3x.jpg");
+  }
+
+  .header-title-table {
+    margin-top: 342px;
+  }
+
+  .header-title-table__item {
+    padding: 0 40px;
+  }
+}
