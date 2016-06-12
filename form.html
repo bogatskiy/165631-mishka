@@ -8,34 +8,29 @@
   </head>
   <body>
     <header  class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html" class="page-header__img">
-        </a>
-      </div>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        <div class="main-nav__inner">
+          <div class="main-nav__logo">
+            <a class="main-nav__img" href="index.html"></a>
+          </div>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a></li>
           </ul>
           <ul class="main-nav__user-list">
             <li class="main-nav__user-item main-nav__user-item--search"><a class="main-nav__user-link main-nav__user-link--search" href="#">Поиск по сайту</a></li>
-            <li class="main-nav__user-item"><a class="main-nav__user-link" href="#">Корзина: <span>пока пуста</span></a></li>
+            <li class="main-nav__user-item main-nav__user-item--cart"><a class="main-nav__user-link" href="#">Корзина: <span>пока пуста</span></a></li>
           </ul>
         </div>
       </nav>
       <section class="header-title">
-        <div class="header-title__list-wrapper">
-          <ul class="header-title__list">
-            <li class="header-title__item header-title__item--visual-table"><a class="header-title__link header-title__link--catalog" href="catalog.html">Каталог товаров</a></li>
-            <li class="header-title__item header-title__item--visual-table"><a class="header-title__link" href="form.html">Вязание на заказ</a></li>
-            <li class="header-title__item header-title__item--visual-desk"><a class="header-title__link header-title__link--catalog" href="catalog.html">Новые поступления</a></li>
-            <li class="header-title__item header-title__item--visual-desk"><a class="header-title__link" href="form.html">Распродажа</a></li>
-            <li class="header-title__item header-title__item--delivery"><p class="header-title__delivery-text">Бесплатная доставка по Росси</p></li>
-          </ul>
-        </div>
+        <ul class="sub-nav__list">
+          <li class="sub-menu__item sub-menu__item--visual-desk"><a class="sub-menu__link sub-menu__link--new" href="catalog.html">Новые поступления</a></li>
+          <li class="sub-menu__item sub-menu__item--visual-desk"><a class="sub-menu__link" href="form.html">Распродажа</a></li>
+          <li class="sub-menu__item sub-menu__item--delivery"><p class="sub-menu__delivery-text">Бесплатная доставка по России</p></li>
+        </ul>
         <h1 class="header-title__title">Вязание на заказ</h1>
-      </section>
+  </section>
     </header>
       <main>
           <form class="form" action="#" method="post">

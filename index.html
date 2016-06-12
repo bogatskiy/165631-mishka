@@ -8,90 +8,84 @@
   </head>
   <body>
       <header  class="page-header">
-        <div class="page-header__wrapper">
-          <div class="page-header__logo">
-            <img class="page-header__img" src="img/logo-mobile.svg" alt="" />
-          </div>
-          <nav class="main-nav">
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
-                <li class="main-nav__item"><a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a></li>
-              </ul>
-              <ul class="main-nav__user-list">
-                <li class="main-nav__user-item main-nav__user-item--search"><a class="main-nav__user-link main-nav__user-link--search" href="#">Поиск по сайту</a></li>
-                <li class="main-nav__user-item main-nav__user-item--cart"><a class="main-nav__user-link" href="#">Корзина: <span>пока пуста</span></a></li>
-              </ul>
+        <nav class="main-nav">
+          <div class="main-nav__inner">
+            <div class="main-nav__logo">
+              <a class="main-nav__img"></a>
             </div>
-          </nav>
-        </div>
-        <section class="header-title">
-          <div class="header-title__list-wrapper">
-            <ul class="header-title__list">
-              <li class="header-title__item header-title__item--visual-desk"><a class="header-title__link header-title__link--catalog" href="catalog.html">Новые поступления</a></li>
-              <li class="header-title__item header-title__item--visual-desk"><a class="header-title__link" href="form.html">Распродажа</a></li>
-              <li class="header-title__item header-title__item--delivery"><p class="header-title__delivery-text">Бесплатная доставка по России</p></li>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a></li>
+            </ul>
+            <ul class="main-nav__user-list">
+              <li class="main-nav__user-item main-nav__user-item--search"><a class="main-nav__user-link main-nav__user-link--search" href="#">Поиск по сайту</a></li>
+              <li class="main-nav__user-item main-nav__user-item--cart"><a class="main-nav__user-link" href="#">Корзина: <span>пока пуста</span></a></li>
             </ul>
           </div>
+        </nav>
+        <section class="header-title">
+          <ul class="sub-nav__list">
+            <li class="sub-menu__item sub-menu__item--visual-desk"><a class="sub-menu__link sub-menu__link--new" href="catalog.html">Новые поступления</a></li>
+            <li class="sub-menu__item sub-menu__item--visual-desk"><a class="sub-menu__link" href="form.html">Распродажа</a></li>
+            <li class="sub-menu__item sub-menu__item--delivery"><p class="sub-menu__delivery-text">Бесплатная доставка по России</p></li>
+          </ul>
           <div class="header-title__fon">
             <h1 class="header-title__title">Милые штуки <br>ручной <br>работы для дома</h1>
-            <article class="header-title-table">
-              <a class="header-title-table__item header-title-table__item--interior" href="#">
-                <div class="header-title-table__link" >Предметы <br>интерьера</div>
-              </a>
-              <a class="header-title-table__item header-title-table__item--toys" href="#">
-                <div class="header-title-table__link" >Детские <br>игрушки</div>
-              </a>
+            <article class="category-table">
+              <a class="category-table__item category-table__item--interior" href="#">Предметы <br>интерьера</a>
+              <a class="category-table__item category-table__item--toys" href="#">Детские <br>игрушки</a>
             </article>
           </div>
     </section>
       </header>
       <main>
-        <section class="good">
-          <div class="good__inner">
-            <article class="good__item">
-              <div class="good__title-wrap">
-                <h2 class="good__title">Вязаные корзинки</h2>
-                <div class="good__stocks">Товар <br>недели</div>
+        <section class="featured">
+          <div class="featured__inner">
+            <article class="featured__item">
+              <div class="featured__title-wrap">
+                <h2 class="featured__title">Вязаные корзинки</h2>
+                <div class="featured__stocks">Товар <br>недели</div>
               </div>
 
-                <div class="good__description-wrap">
-                  <div class="good__description">
-                    <p class="good__text">
+                <div class="featured__description-wrap">
+                  <div class="featured__description">
+                    <p class="featured__text">
                       Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
                     </p>
-                    <table class="good__table">
-                      <tr class="good__row">
-                        <td class="good__cell good__cell--param">
+                    <table class="featured__table">
+                      <tr class="featured__row">
+                        <td class="featured__cell featured__cell--param">
                           Цвет:
                         </td>
-                        <td class="good__cell good__cell--value">
+                        <td class="featured__cell featured__cell--value">
                           «Тиффани»/серый
                         </td>
                       </tr>
-                      <tr class="good__row">
-                        <td class="good__cell good__cell--param">
+                      <tr class="featured__row">
+                        <td class="featured__cell featured__cell--param">
                           Диаметр:
                         </td>
-                        <td class="good__cell good__cell--value">
+                        <td class="featured__cell featured__cell--value">
                           25 см
                         </td>
                       </tr>
-                      <tr class="good__row">
-                        <td class="good__cell good__cell--param">
+                      <tr class="featured__row">
+                        <td class="featured__cell featured__cell--param">
                           Высота:
                         </td>
-                        <td class="good__cell good__cell--value">
+                        <td class="featured__cell featured__cell--value">
                           15 см
                         </td>
                       </tr>
                     </table>
-                    <div class="good__img-main"></div>
+                    <img class="featured__img" src="img/triple-set-mobile@1x.jpg">
                   </div>
-                  <div class="good__order">
-                    <div class="good__price">Цена: <span>990 руб.</span></div>
-                    <a class="btn good__btn" href="#">заказать</a>
+                  <div class="featured__order">
+                    <div class="featured__price">Цена: <span>990 руб.</span></div>
+                    <a class="btn featured__btn" href="#">заказать</a>
                   </div>
+                </div>
+                <div class="featured__img-main">
                 </div>
             </article>
           </div>
