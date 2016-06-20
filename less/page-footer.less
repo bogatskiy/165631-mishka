@@ -1,5 +1,6 @@
 .page-footer {
     background-color: #f1f1f1;
+    .container();
     &__item {
         display: flex;
         justify-content: center;
@@ -9,6 +10,15 @@
         &--social {
             font-size: 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        &--logo {
+          display: none;
+        }
+        &--copyright {
+          font-family: "Verdana";
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: bold;
         }
     }
     &__links-wrap {
@@ -35,6 +45,22 @@
     }
 }
 
-.page-footer__inner {
-  .container();
+@media @tablet-widths {
+  .page-footer {
+    display: flex;
+  }
+
+  .page-footer__item {
+    width: 33%;
+    min-height: 143px;
+  }
+
+  .page-footer__item--logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .page-footer__item--copyright {
+    justify-content: flex-end;
+  }
 }

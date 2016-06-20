@@ -1,14 +1,20 @@
-.contact {
-        margin-bottom: 39px;
+.contacts {
+  margin-bottom: 39px;
 }
 
-.contacts__inner {
+.contact__item-header,
+.contact__item-footer,
+.contact__info {
   .container();
 }
 
 .contact__title {
   .title();
   margin-bottom: 35px;
+}
+
+.contact__flag {
+  display: none;
 }
 
 .contact__table {
@@ -33,13 +39,105 @@
 
 .contact__map {
   min-height: 457px;
-  background-image: url("../img/map-mobile@1x.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   margin-bottom: 40px;
+  overflow: hidden;
+  & img {
+    width: 100%
+  }
 }
 
 .contact__btn {
   margin-bottom: 40px;
+}
+
+@media @tablet-widths {
+  .contact__flag {
+    display: block;
+  }
+
+  .contact__item-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__table tbody {
+    display: flex;
+  }
+
+  .contact__row {
+    width: 50%;
+  }
+
+  .contact__btn {
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media @desktop-widths {
+  .contact__item {
+    min-height: 457px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .contact__item-header {
+    margin: 0;
+    width: 50%;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+    align-items: center;
+    padding-top: 62px;
+  }
+
+  .contact__title {
+    width: 67%;
+    margin: 0;
+  }
+
+  .contact__flag {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__info {
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .contact__table tbody {
+    flex-direction: column;
+    padding-left: 33%;
+  }
+
+  .contact__row {
+    width: 100%;
+  }
+
+  .contact__map {
+    .container();
+    position: absolute;
+    max-width: 552px;
+    height: 457px;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+  }
+
+  .contact__item-footer {
+    margin: 0;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .contact__btn {
+    margin: 0;
+    margin-left: 33%;
+  }
 }
