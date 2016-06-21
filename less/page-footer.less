@@ -1,5 +1,6 @@
 .page-footer {
     background-color: #f1f1f1;
+    .container();
     &__item {
         display: flex;
         justify-content: center;
@@ -8,19 +9,29 @@
         margin: 0;
         &--social {
             font-size: 0;
-            line-height: 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         }
+        &--logo {
+          display: none;
+        }
+        &--copyright {
+          font-family: "Verdana";
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: bold;
+        }
+    }
+    &__links-wrap {
+      display: flex;
+      justify-content: space-around;
     }
     &__social-link {
-        display: inline-block;
-        vertical-align: top;
+        display: block;
         width: 20px;
         height: 20px;
         background-color: red;
-        margin-right: 20px;
-        &:last-of-type {
-            margin-right: 0;
+        &--fb {
+          margin: 0 25px;
         }
     }
     &__copyright-logo {
@@ -32,4 +43,24 @@
     &__copyright-text {
         display: inline-block;
     }
+}
+
+@media @tablet-widths {
+  .page-footer {
+    display: flex;
+  }
+
+  .page-footer__item {
+    width: 33%;
+    min-height: 143px;
+  }
+
+  .page-footer__item--logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .page-footer__item--copyright {
+    justify-content: flex-end;
+  }
 }
