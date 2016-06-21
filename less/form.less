@@ -7,7 +7,6 @@
 }
 
 .form__item {
-  padding: 0 0 9.365%;
   margin: 0;
   border: none;
 }
@@ -56,13 +55,44 @@
 }
 
 .form__label {
+  position: relative;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  padding-left: 65px;
   font-size: 17px;
   line-height: 19px;
   font-weight: bold;
-  padding: 10px 0;
-  padding-left: 30px;
-  margin-bottom: 30px;
   box-sizing: border-box;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 50%;
+    margin-top: -20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #444444;
+    border-radius: 50%;
+    background-clip: content-box;
+  }
+  &--color::before {
+    border-radius: 0;
+  }
+  &--color::after {
+  }
+  &--fio::before {
+    display: none;
+  }
+}
+
+.form__input--checkbox:checked + .form__label--color::before {
+  background-color: #62d1ba;
+}
+
+.form__input--radio:checked + .form__label--radio::before {
+  background-color: #62d1ba;
 }
 
 .form__label--fio {
@@ -79,6 +109,7 @@
   padding: 10px 0;
   margin-bottom: 30px;
   border-radius: none;
+  background-color: transparent;
 }
 
 .form__field--textarea {
@@ -99,23 +130,58 @@
 
   .form__item {
     border: none;
-    .container();
     display: flex;
     flex-direction: row;
+    padding-left: 6.51%;
+    padding-right: 6.51%
   }
 
-  .form__text {
-    padding-left: 25%;
+  .form__item--text {
+    padding-top: 25px;
+    padding-bottom: 60px;
+  }
+
+  .form__item--type {
+    padding-bottom: 25px;
   }
 
   .form__item--color {
     background-color: #f1f1f1;
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+
+  .form__item--fio {
+    padding-top: 60px;
+  }
+
+  .form__item--tel {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #f1f1f1;
+  }
+
+  .form__item--email {
+    background-color: #f1f1f1;
+    padding-bottom: 70px;
+  }
+
+  .form__item--dop {
+    padding-top: 60px;
+    padding-bottom: 55px;
   }
 
   .form__item--btn {
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 55px;
   }
+
+  .form__text {
+    padding-left: 25%;
+    margin: 0;
+  }
+
 
   .form__item-title-wrap {
     width: 25%;
@@ -135,13 +201,16 @@
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 30px;
   }
 
   .form__list-item {
     width: 100%;
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
   }
+
 
   .form__field {
     width: auto;
@@ -162,6 +231,11 @@
     width: 100%;
   }
 
+  .form__list--color {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .form__btn {
     width: 230px;
     margin: 0
@@ -174,7 +248,4 @@
     font-style: normal;
 
   }
-
-
-
 }

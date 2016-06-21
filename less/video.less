@@ -28,14 +28,12 @@
 .video__inner {
   border: 1px solid #ececec;
   box-sizing: border-box;
-
 }
 
 .video__title-wrap {
   display: flex;
-  padding: 0 25px;
+  padding: 25px;
   align-items: center;
-  margin-bottom: 30px;
   box-sizing: border-box;
 
 }
@@ -77,6 +75,10 @@
   }
 }
 
+.video__desc-wrap {
+  padding: 0 25px;
+}
+
 @media @tablet-widths {
   .video__inner {
     display: flex;
@@ -84,7 +86,9 @@
   }
 
   .video__block {
-    order: -1
+    order: -1;
+    min-height: 455px;
+    min-width: 668px;
   }
 }
 

@@ -34,20 +34,21 @@
     </header>
       <main>
         <form class="form" action="#" method="post">
-          <article class="form__item">
+          <article class="form__item form__item--text">
             <p class="form__text">
               Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
             </p>
           </article>
-
           <article class="form__item form__item--type">
             <div class="form__item-title-wrap">
               <b class="form__item-title">Тип</b>
               <div class="form__item-border"></div>
             </div>
             <div class="form__list">
-              <label class="form__label" for="radio__interior"><input class="form__input form__input--radio" type="radio" name="form__type" value="" id="radio__interior" checked>Аксессуар для интерьера</label>
-              <label class="form__label" for="radio__toy"><input class="form__input form__input--radio" type="radio" name="form__type" value="" id="radio__toy">Детские игрушки</label>
+              <input class="form__input form__input--radio" type="radio" name="form__type" value="" id="radio__interior" checked>
+              <label class="form__label form__label--radio" for="radio__interior">Аксессуар для интерьера</label>
+              <input class="form__input form__input--radio" type="radio" name="form__type" value="" id="radio__toy">
+              <label class="form__label form__label--radio" for="radio__toy">Детские игрушки</label>
             </div>
           </article>
           <article class="form__item  form__item--color">
@@ -55,13 +56,19 @@
               <b class="form__item-title">цвет</b>
               <div class="form__item-border"></div>
             </div>
-            <div class="form__list">
-              <label class="form__label form__label--color" for="white"><input class="form__input form__input--checkbox" id="white" type="checkbox" name="white" value="">Белый</label>
-              <label class="form__label form__label--color" for="gray"><input class="form__input form__input--checkbox" id="gray" type="checkbox" name="gray" value="">Серый</label>
-              <label class="form__label form__label--color" for="tiffani"><input class="form__input form__input--checkbox" id="tiffani" type="checkbox" name="tiffani" value="">«Тиффани»</label>
-              <label class="form__label form__label--color" for="black"><input class="form__input form__input--checkbox" id="black" type="checkbox" name="black" value="">Черный</label>
-              <label class="form__label form__label--color" for="pink"><input class="form__input form__input--checkbox" id="pink" type="checkbox" name="pink" value="">Розовый</label>
-              <label class="form__label form__label--color" for="orange"><input class="form__input form__input--checkbox" id="orange" type="checkbox" name="orange" value="">Оранжевый</label>
+            <div class="form__list form__list--color">
+              <input class="form__input form__input--checkbox" id="white" type="checkbox" name="white" value="">
+              <label class="form__label form__label--color" for="white">Белый</label>
+              <input class="form__input form__input--checkbox" id="gray" type="checkbox" name="gray" value="">
+              <label class="form__label form__label--color" for="gray">Серый</label>
+              <input class="form__input form__input--checkbox" id="tiffani" type="checkbox" name="tiffani" value="">
+              <label class="form__label form__label--color" for="tiffani">«Тиффани»</label>
+              <input class="form__input form__input--checkbox" id="black" type="checkbox" name="black" value="">
+              <label class="form__label form__label--color" for="black">Черный</label>
+              <input class="form__input form__input--checkbox" id="pink" type="checkbox" name="pink" value="">
+              <label class="form__label form__label--color" for="pink">Розовый</label>
+              <input class="form__input form__input--checkbox" id="orange" type="checkbox" name="orange" value="">
+              <label class="form__label form__label--color" for="orange">Оранжевый</label>
             </div>
           </article>
           <article class="form__item form__item--fio">
