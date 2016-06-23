@@ -53,13 +53,16 @@
 .video__block {
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 260px;
   min-height: 150px;
   width: 260px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media @retina {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
 }
 
 .video__block-play {
@@ -86,8 +89,15 @@
 
   .video__block {
     order: -1;
+    width: 100%;
     min-height: 455px;
-    min-width: 668px;
+    background-size: 500px;
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-size: 668px;
+    background-position: center;
+    @media @retina {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 }
 

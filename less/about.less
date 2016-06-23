@@ -34,7 +34,9 @@
     width: 40px;
     top: 5px;
     left: 0;
-    background-color: #63d1bb;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
   }
 }
 
@@ -77,6 +79,31 @@
   .about__link {
     font-size: 20px;
   }
+
+  .about__link--eco::after {
+    background-image: url(../img/icon-feature-1.svg);
+  }
+
+  .about__link--style::after {
+    background-image: url(../img/icon-feature-3.svg);
+  }
+
+  .about__link--like::after {
+    background-image: url(../img/icon-feature-5.svg);
+  }
+
+  .about__link--love::after {
+    background-image: url(../img/icon-feature-2.svg);
+  }
+
+  .about__link--fatherland::after {
+    background-image: url(../img/icon-feature-4.svg);
+  }
+
+  .about__link--pack::after {
+    background-image: url(../img/icon-feature-6.svg);
+  }
+
 }
 
 @media @desktop-widths {

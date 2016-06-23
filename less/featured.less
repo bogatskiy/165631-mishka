@@ -102,34 +102,47 @@
   }
 
   .featured__description-wrap {
-    width: 43.4%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    position: relative;
     justify-content: space-between;
+    padding-right: 44px;
+    box-sizing: border-box;
+  }
+
+  .featured__description {
+    display: flex;
+    flex-direction: column;
+    min-height: 291px;
+    justify-content: space-between;
+
   }
 
   .featured__text {
     font-size: 16px;
     line-height: 30px;
-    margin-bottom: 50px;
   }
 
   .featured__table {
     font-size: 15px;
   }
 
-  .featured__img-main {
-    display: block;
-    width: 50%;
-    max-height: 417px;
-    background-image: url("../img/triple-set-mobile@3x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
   .featured__img {
-    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    z-index: -1;
+    width: 100%;
+    min-height: 417px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    & img {
+      height: 417px;
+    }
   }
 
   .featured__price {
@@ -156,17 +169,24 @@
     }
 
     .featured__description-wrap {
-      margin-left: 16.66%;
-      width: 27.8%
+      padding-left: 16.66%;
     }
 
-    .featured__text {
-      margin-bottom: 65px;
+    .featured__description {
+      min-height: 306px;
     }
 
     .featured__img-main {
       margin-top: -175px;
       width: 50%;
       max-height: 636px;
+    }
+
+    .featured__img {
+      bottom: 0;
+      top: -167px;
+      & img {
+        height: 636px;;
+      }
     }
 }

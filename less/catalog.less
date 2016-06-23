@@ -8,6 +8,9 @@
 
 .catalog__img {
   font-size: 0;
+  & img {
+    width: 100%;
+  }
 }
 
 .catalog__desc {
@@ -56,11 +59,18 @@
   }
 
   .catalog__img {
-    width: 50%;
+    max-width: 50%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    & img {
+      width: auto;
+      height: 334px;
+    }
   }
 
   .catalog__desc {
-    width: 50%;
+    flex-grow: 1;
     padding: 0 33px;
     display: flex;
     flex-direction: column;
@@ -93,7 +103,10 @@
   }
 
   .catalog__img  {
-    width: auto;
+    max-width: 100%;
+    & img {
+      height: 484px;
+    }
   }
 
   .catalog__desc {

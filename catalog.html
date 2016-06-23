@@ -7,24 +7,22 @@
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-
-
-
     <header  class="page-header">
-
       <div class="main-nav__inner">
         <div class="main-nav__logo">
-          <a class="main-nav__img" href="index.html"></a>
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 640px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="" />
+            </picture>
+          </a>
         </div>
-
         <div class="main-nav__toggle">
           <span class="main-nav__toggle-item main-nav__toggle-item--nojs-top main-nav__toggle-item--top"></span>
           <span class="main-nav__toggle-item main-nav__toggle-item--nojs-midle main-nav__toggle-item--midle"></span>
           <span class="main-nav__toggle-item main-nav__toggle-item--nojs-bottom main-nav__toggle-item--bottom"></span>
         </div>
-
-
-
         <nav class="main-nav no-js">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
@@ -36,54 +34,73 @@
           </ul>
         </nav>
       </div>
-
       <section class="header-title">
         <ul class="sub-nav__list">
           <li class="sub-menu__item sub-menu__item--visual-desk"><a class="sub-menu__link sub-menu__link--new" href="catalog.html">Новые поступления</a></li>
           <li class="sub-menu__item sub-menu__item--visual-desk"><a class="sub-menu__link" href="form.html">Распродажа</a></li>
-          <li class="sub-menu__item sub-menu__item--delivery"><p class="sub-menu__delivery-text">Бесплатная доставка по России</p></li>
+          <li class="sub-menu__item sub-menu__item--delivery">
+            <p class="sub-menu__delivery-text">Бесплатная доставка по России</p>
+          </li>
         </ul>
         <h1 class="header-title__title">Милые штуки <br>ручной <br>работы для дома</h1>
-  </section>
+      </section>
     </header>
-      <main>
-        <div class="container">
-          <section class="catalog">
-            <article class="catalog__item">
-              <img class="catalog__img" src="img\photo-1-mobile@1x.jpg">
-              <div class="catalog__desc">
-                <a class="catalog__desc-title" href="#">Зайчик-попрыгайчик</a>
-                <b class="catalog__desc-char">Рост 30 см, вес 200 г</b>
-                <i class="catalog__desc-price">1 200 руб.</i>
-              </div>
-            </article>
-            <article class="catalog__item">
-              <img class="catalog__img" src="img\photo-2-mobile@1x.jpg">
-              <div class="catalog__desc">
-                <a class="catalog__desc-title" href="#">Корзинка для белья</a>
-                <b class="catalog__desc-char">Диаметр 15 см, высота 10 см</b>
-                <i class="catalog__desc-price">690 руб.</i>
-              </div>
-            </article>
-            <article class="catalog__item">
-              <img class="catalog__img" src="img\photo-3-mobile@1x.jpg">
-              <div class="catalog__desc">
-                <a class="catalog__desc-title" href="#">Большая корзинка <br>для игрушек</a>
-                <b class="catalog__desc-char">Диаметр 30 см, высота 30 см</b>
-                <i class="catalog__desc-price">1 500 руб.</i>
-              </div>
-            </article>
-          </section>
-          <section class="video">
-            <div class="video__inner">
-              <div class="video__title-wrap">
-                <svg class="video__title-img" svg version="1.1" id="Layer_1" x="0px" y="0px"
+    <main>
+      <div class="container">
+        <section class="catalog">
+          <article class="catalog__item">
+            <div class="catalog__img">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 640px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x">
+              </picture>
+            </div>
+            <div class="catalog__desc">
+              <a class="catalog__desc-title" href="#">Зайчик-попрыгайчик</a>
+              <b class="catalog__desc-char">Рост 30 см, вес 200 г</b>
+              <i class="catalog__desc-price">1 200 руб.</i>
+            </div>
+          </article>
+          <article class="catalog__item">
+            <div class="catalog__img">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 640px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x">
+              </picture>
+            </div>
+            <div class="catalog__desc">
+              <a class="catalog__desc-title" href="#">Корзинка для белья</a>
+              <b class="catalog__desc-char">Диаметр 15 см, высота 10 см</b>
+              <i class="catalog__desc-price">690 руб.</i>
+            </div>
+          </article>
+          <article class="catalog__item">
+            <div class="catalog__img">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 640px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x">
+              </picture>
+            </div>
+            <div class="catalog__desc">
+              <a class="catalog__desc-title" href="#">Большая корзинка <br>для игрушек</a>
+              <b class="catalog__desc-char">Диаметр 30 см, высота 30 см</b>
+              <i class="catalog__desc-price">1 500 руб.</i>
+            </div>
+          </article>
+        </section>
+        <section class="video">
+          <div class="video__inner">
+            <div class="video__title-wrap">
+              <svg class="video__title-img" svg version="1.1" id="Layer_1" x="0px" y="0px"
                 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                 <g transform="translate(0 192)">
                   <path d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10
-                  c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2
-                  C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4
-                  C19.553-175,20-175.447,20-176z"/>
+                    c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2
+                    C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4
+                    C19.553-175,20-175.447,20-176z"/>
                 </g>
               </svg>
               <h2 class="title title--h2 video__title">Процесс производства</h2>
@@ -99,28 +116,28 @@
             </div>
           </div>
         </section>
-        </div>
-      </main>
-      <footer class="page-footer">
-        <div class="container">
-          <div class="page-footer__inner">
-            <div class="page-footer__item page-footer__item--logo">
-              <img src="http://placehold.it/86x35" alt="" />
-            </div>
-            <p class="page-footer__item page-footer__item--social">
-              <span class="page-footer__links-wrap">
-                <a class="page-footer__social-link page-footer__social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-                <a class="page-footer__social-link page-footer__social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-                <a class="page-footer__social-link page-footer__social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-              </span>
-            </p>
-            <p class="page-footer__item page-footer__item--copyright">
-              Разработано
-              <img class="page-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="" />
-            </p>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__inner">
+          <div class="page-footer__item page-footer__item--logo">
+            <img src="http://placehold.it/86x35" alt="" />
           </div>
+          <p class="page-footer__item page-footer__item--social">
+            <span class="page-footer__links-wrap">
+            <a class="page-footer__social-link page-footer__social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="page-footer__social-link page-footer__social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="page-footer__social-link page-footer__social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </span>
+          </p>
+          <p class="page-footer__item page-footer__item--copyright">
+            Разработано
+            <img class="page-footer__copyright-logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="" />
+          </p>
         </div>
-      </footer>
-      <script src="js/mobile-menu.js"></script>
+      </div>
+    </footer>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
