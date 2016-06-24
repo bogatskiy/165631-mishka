@@ -1,11 +1,14 @@
 .category-table {
   display: flex;
   flex-direction: column;
-  padding-top: 75px;
+  padding-top: 70px;
+  min-height: 211px;
+  justify-content: flex-end;
 }
 
 .category-table__item {
   display: flex;
+  justify-content: space-between;
   min-height: 103px;
   padding: 0 30px;
   align-items: center;
@@ -15,23 +18,21 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  &:hover .category-table__link {
+  &:hover {
+    min-height: 108px;
+  }
+  &:hover img,
+  &:hover span {
     margin-top: -5px;
   }
 }
 
 .category-table__item--interior {
   background-color: @color-interior;
-  &:hover {
-    background-color: lighten(@color-interior, 5%);
-  }
 }
 
 .category-table__item--toys {
   background-color: @color-toys;
-  &:hover {
-    background-color: darken(@color-toys, 5%);
-  }
 }
 
 .category-table__link {
@@ -41,19 +42,24 @@
   .category-table {
     .container();
     flex-direction: row;
-    margin-top: 287px;
+    margin-top: 282px;
+    align-items: flex-end;
+    min-height: 124px;
   }
 
   .category-table__item {
     width: 50%;
     padding: 0 35px;
     min-height: 119px;
+    &:hover {
+      min-height: 124px;
+    }
   }
 }
 
 @media @desktop-widths {
   .category-table {
-    margin-top: 277px;
+    margin-top: 272px;
   }
 
   .category-table__item {
