@@ -14,6 +14,7 @@ display: block;
 .main-nav__item {
   border-bottom: 1px solid #ececec;
   box-sizing: border-box;
+  position: relative;
 }
 
 .main-nav__logo {
@@ -92,11 +93,19 @@ display: block;
 .main-nav__user-link {
   .menu-link();
   width: 100%;
-  position: relative
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
+.main-nav__link {
 
-.main-nav__user-link::after {
+}
+
+.main-nav__user-item svg {
   position: absolute;
   top: 50%;
   left: 28px;
@@ -104,8 +113,6 @@ display: block;
   width: 20px;
   height: 20px;
   margin-top: -10px;
-  content: "";
-  background-color: #d3d2d2;
 }
 
 @media @tablet-widths {

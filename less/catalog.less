@@ -8,12 +8,23 @@
 
 .catalog__img {
   font-size: 0;
+  & img {
+    width: 100%;
+  }
 }
 
 .catalog__desc {
   padding: 0 25px;
   border: 1px solid #ececec;
   box-sizing: border-box;
+}
+
+.catalog__item:hover .catalog__desc {
+  box-shadow: 0 6px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.catalog__item:active .catalog__desc {
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
 .catalog__desc-title {
@@ -56,11 +67,18 @@
   }
 
   .catalog__img {
-    width: 50%;
+    max-width: 50%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    & img {
+      width: auto;
+      height: 334px;
+    }
   }
 
   .catalog__desc {
-    width: 50%;
+    flex-grow: 1;
     padding: 0 33px;
     display: flex;
     flex-direction: column;
@@ -93,7 +111,10 @@
   }
 
   .catalog__img  {
-    width: auto;
+    max-width: 100%;
+    & img {
+      height: 484px;
+    }
   }
 
   .catalog__desc {
