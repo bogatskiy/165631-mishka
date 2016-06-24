@@ -17,51 +17,18 @@
   .container();
 }
 
-.about__link--eco:after {
-  background-image: url(../img/icon-feature-1.svg);
-}
-
-.about__link--style::after {
-  background-image: url(../img/icon-feature-3.svg);
-}
-
-.about__link--like::after {
-  background-image: url(../img/icon-feature-5.svg);
-}
-
-.about__link--love::after {
-  background-image: url(../img/icon-feature-2.svg);
-}
-
-.about__link--fatherland::after {
-  background-image: url(../img/icon-feature-4.svg);
-}
-
-.about__link--pack::after {
-  background-image: url(../img/icon-feature-6.svg);
+.about__item {
+  margin-bottom: 30px;
 }
 
 .about__link {
-  position: relative;
   display: block;
-  padding-top: 55px;
+  padding-top: 20px;
   font-family: "Verdana";
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   color: #000;
-  &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    height: 40px;
-    width: 40px;
-    top: 5px;
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
 }
 
 @media @tablet-widths {

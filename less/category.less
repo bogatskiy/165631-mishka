@@ -18,13 +18,25 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
+  & svg {
+    opacity: 0.5;
+    fill: #444;
+  }
   &:hover {
     min-height: 108px;
   }
-  &:hover img,
+  &:active svg {
+    margin-top: -5px;
+    opacity: 0.2;
+  }
+  &:hover svg,
   &:hover span {
     margin-top: -5px;
   }
+}
+
+.category__svg {
+  background-color: red;
 }
 
 .category-table__item--interior {
