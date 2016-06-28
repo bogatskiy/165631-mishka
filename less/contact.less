@@ -1,3 +1,15 @@
+.contacts {
+  &:before {
+    margin-bottom: 40px;
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    display: block;
+    background-size: contain;
+  }
+}
+
 .contact__item-header,
 .contact__item-footer,
 .contact__info {
@@ -33,6 +45,17 @@
   }
 }
 
+.contact__mail {
+  color: #444444;
+  text-decoration: none;
+  &:hover {
+    color: #46c1ae
+  }
+  &:active {
+    opacity: 0.3
+  }
+}
+
 .contact__map {
   overflow: hidden;
 }
@@ -43,9 +66,7 @@
   overflow: hidden;
   font-size: 0;
   margin-bottom: 40px;
-  & img {
-    height: 457px;
-  }
+  min-height: 457px;
 }
 
 .contact__btn {
@@ -53,6 +74,11 @@
 }
 
 @media @tablet-widths {
+  .contacts::before {
+    height: 15px;
+    margin-bottom: 45px;
+  }
+
   .contact__flag {
     display: block;
   }
@@ -80,6 +106,10 @@
 }
 
 @media @desktop-widths {
+  .contacts::before {
+    height: 20px;
+    margin-bottom: 50px;
+  }
   .contact__item {
     min-height: 457px;
     position: relative;
@@ -135,10 +165,6 @@
     bottom: 0;
     overflow: hidden;
     box-sizing: border-box;
-    & img {
-
-      height: 457px;
-    }
   }
 
   .contact__item-footer {

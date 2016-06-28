@@ -1,48 +1,90 @@
 .page-footer {
     background-color: #f1f1f1;
-    &__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 80px;
-        margin: 0;
-        &--social {
-            font-size: 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-        }
-        &--logo {
-          display: none;
-        }
-        &--copyright {
-          font-family: "Verdana";
-          font-size: 18px;
-          line-height: 18px;
-          font-weight: bold;
-        }
-    }
-    &__links-wrap {
-      display: flex;
-      justify-content: space-around;
-    }
-    &__social-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        &--fb {
-          margin: 0 25px;
-        }
-    }
-    &__copyright-logo {
-        display: inline-block;
-        width: 27px;
-        height: 34px;
-        padding-left: 25px;
-    }
-    &__copyright-text {
-        display: inline-block;
-    }
+}
+
+.page-footer__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    margin: 0;
+}
+
+.page-footer__item--social {
+  font-size: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.page-footer__item--logo {
+  display: none;
+}
+
+.page-footer__item--copyright {
+  font-family: "Verdana";
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.page-footer__links-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.page-footer__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.page-footer__social-link--fb {
+  margin: 0 25px;
+}
+.page-footer__copyright-logo {
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    padding-left: 25px;
+}
+
+.page-footer__copyright-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.page-footer__copyright-link svg {
+  margin-left: 24px;
+  fill: #231f20;
+}
+
+.page-footer__copyright-link:hover svg {
+  fill: #46c1ae
+}
+
+.page-footer__copyright-link:active svg {
+  opacity: 0.3
+}
+
+.page-footer__copyright-link:hover span {
+  opacity: 0.6;
+}
+
+.page-footer__copyright-link:active span {
+  opacity: 0.3
+}
+
+.page-footer__item--logo svg,
+.page-footer__item--social svg {
+  fill: #231f20;
+  &:hover {
+    fill: #46c1ae
+  }
+  &:active {
+    opacity: 0.3
+  }
 }
 
 @media @tablet-widths {

@@ -1,5 +1,5 @@
 .form__btn {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .form__item {
@@ -43,6 +43,19 @@
 .form__list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form__list-svg {
+  position: absolute;
+  right: 0;
+  bottom: 13px;
+  opacity: 0.2
+}
+
+.form__list-item {
+  margin-bottom: 30px;
 }
 
 .form__input--radio,
@@ -59,6 +72,12 @@
   line-height: 19px;
   font-weight: bold;
   box-sizing: border-box;
+  &:hover::before {
+    border-color: #62d1ba
+  }
+  &:active::before {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
   &::before {
     position: absolute;
     content: "";
@@ -67,14 +86,18 @@
     left: 0;
     top: 50%;
     margin-top: -20px;
-    padding: 10px;
     box-sizing: border-box;
     border: 2px solid #444444;
     border-radius: 50%;
     background-clip: content-box;
+    padding: 10px;
   }
   &--color::before {
+    padding: 0;
     border-radius: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
   }
   &--color::after {
   }
@@ -84,7 +107,7 @@
 }
 
 .form__input--checkbox:checked + .form__label--color::before {
-  background-color: #62d1ba;
+  background-image: url("../img/icon-tick.svg");
 }
 
 .form__input--radio:checked + .form__label--radio::before {
@@ -101,10 +124,27 @@
   width: 100%;
   border: none;
   outline: none;
-  border-bottom: 2px solid black;
   padding: 10px 0;
-  margin-bottom: 30px;
   background-color: transparent;
+  border-bottom: 2px solid #000;
+  &:invalid {
+    border-color: #f0b1b1
+  }
+  &:empty {
+    border-color: #000;
+  }
+  &:hover,
+  &:focus,
+  &:valid {
+    border-color: #62d1ba
+  }
+}
+
+.form__field:hover + .form__list-svg,
+.form__field:focus + .form__list-svg,
+.form__field:valid + .form__list-svg {
+  fill: #62d1ba;
+  opacity: 1
 }
 
 .form__field--textarea {
@@ -112,6 +152,7 @@
   width: 100%;
   padding: 17px 15px;
   box-sizing: border-box;
+  margin-bottom: 60px;
 }
 
 .form__btn-text {
@@ -121,6 +162,7 @@
 @media @tablet-widths {
   .form {
     padding: 0;
+    margin-bottom: 55px;
   }
 
   .form__container {
@@ -170,7 +212,6 @@
   .form__container--btn {
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 55px;
   }
 
   .form__text {
@@ -224,6 +265,7 @@
 
   .form__label--fio {
     display: inline;
+    margin-right: 25px;
   }
 
   .form__list {
@@ -245,5 +287,29 @@
     font-size: 16px;
     line-height: 30px;
     font-style: normal;
+  }
+}
+
+@media @tablet-widths {
+  .form {
+    margin-bottom: 60px;
+  }
+
+  .form__item--text {
+    padding-top: 0;
+  }
+
+  .form__item--type,
+  .form__item--color {
+    padding-bottom: 0;
+  }
+
+  .form__list--fio {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .form__item--contacts {
+    padding-bottom: 30px;
   }
 }

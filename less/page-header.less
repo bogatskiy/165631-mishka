@@ -43,6 +43,16 @@
 @media @tablet-widths {
   .page-header{
     margin-bottom: 55px;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 24px;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      z-index: 3
+    }
   }
 
   .header-title {
@@ -123,6 +133,12 @@
   .sub-menu__link {
     .menu-link();
     padding-left: 33px;
+    &:hover {
+      opacity: 0.6
+    }
+    &:active {
+      opacity: 0.3
+    }
   }
 
   .sub-menu__link--new {
