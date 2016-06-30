@@ -23,31 +23,25 @@ display: block;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   border-bottom: 1px solid #ececec;
   box-sizing: border-box;
-  &:hover {
+  font-size: 0;
+  & img:hover {
     opacity: 0.6;
   }
-  &:active {
+  & img:active {
     opacity: 0.3
   }
-}
-
-.main-nav__img {
-  background-image: url("../img/logo-mobile.svg");
-  min-height: 80px;
-  display: block;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .main-nav__toggle {
   position: absolute;
   width: 20px;
   height: 20px;
-  right: 9.365%;
-  top: 30px;
+  right: 7%;
+  top: 20px;
+  padding: 10px;
   overflow: hidden;
 }
 
@@ -59,7 +53,6 @@ display: block;
   background-color: #221f1f;
   transition: 0.3s
 }
-
 
 .main-nav__toggle-item--top {
   transform: translateY(4px);
@@ -105,10 +98,6 @@ display: block;
   &:active {
     opacity: 0.3;
   }
-}
-
-.main-nav__link {
-
 }
 
 .main-nav__user-item svg {

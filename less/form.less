@@ -44,6 +44,9 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  &--tel {
+    margin-bottom: 30px;
+  }
 }
 
 .form__list-svg {
@@ -158,6 +161,10 @@
   display: none;
 }
 
+  .form__container--contacts {
+    margin-bottom: 30px;
+  }
+
 @media @tablet-widths {
   .form {
     padding: 0;
@@ -171,6 +178,7 @@
   .form__container--contacts {
     flex-wrap: wrap;
     align-items: flex-start;
+    margin: 0;
   }
 
   .form__item {
@@ -237,10 +245,6 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 30px;
-  }
-
-  .form__list--tel {
-    margin-bottom: 30px;
   }
 
   .form__list-item {

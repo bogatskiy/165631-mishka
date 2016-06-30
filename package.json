@@ -30,8 +30,7 @@
     "run-sequence": "^1.2.1"
   },
   "scripts": {
-    "test": "editorconfig-tools check *",
-    "build": "gulp build",
+    "build": "gulp build && gulp serve",
     "start": "gulp serve"
   },
   "engines": {
