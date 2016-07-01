@@ -14,11 +14,10 @@
   background-position: top center;
   background-color: #f9f9f9;
   background-size: 575px;
-  @media @retina {
+  @media @retina-mob {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
-
 
 .header-title__title {
   display: flex;
@@ -35,7 +34,7 @@
   color: #231f20;
 }
 
-.sub-nav__list {
+.sub-nav {
   display: none;
 }
 
@@ -62,7 +61,9 @@
   .header-title__fon {
     padding-top: 64px;
     background-size: 1150px;
-
+    @media @retina-tab {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    }
   }
 
   .header-title__title {
@@ -74,7 +75,7 @@
     }
   }
 
-  .sub-nav__list {
+  .sub-nav {
     .menu-list();
     .container();
     flex-direction: row;
@@ -85,21 +86,21 @@
     left: 0;
   }
 
-  .sub-menu__item {
+  .sub-nav__item {
     display: flex;
     align-items: center;
     min-height: 90px;
   }
 
-  .sub-menu__item--visual-desk {
+  .sub-nav__item--visual-desk {
     display: none;
   }
 
-  .sub-menu__item--delivery {
+  .sub-nav__item--delivery {
     margin-left: auto;
   }
 
-  .sub-menu__delivery-text {
+  .sub-nav__delivery-text {
     margin: 0;
     font-size: 14px;
     line-height: 24px;
@@ -118,6 +119,9 @@
   .header-title__fon {
     padding-top: 70px;
     background-image: url("../img/hero-desktop@1x.jpg");
+    @media @retina {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   .header-title__title {
@@ -126,11 +130,11 @@
     padding: 83px 0
 }
 
-  .sub-menu__item--visual-desk {
+  .sub-nav__item--visual-desk {
     display: flex;
   }
 
-  .sub-menu__link {
+  .sub-nav__link {
     .menu-link();
     padding-left: 33px;
     &:hover {
@@ -141,11 +145,11 @@
     }
   }
 
-  .sub-menu__link--new {
+  .sub-nav__link--new {
     padding-left: 0;
   }
 
-  .sub-menu__link--catalog {
+  .sub-nav__link--catalog {
     min-width: 200px;
   }
 }

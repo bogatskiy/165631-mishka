@@ -1,6 +1,9 @@
-@tablet-widths: ~"(min-width: 640px)";
-@desktop-widths: ~"(min-width: 960px)";
+@mobile-widths: ~"(max-width: 767px)";
+@tablet-widths: ~"(min-width: 768px)";
+@desktop-widths: ~"(min-width: 1150px)";
 @bg-fon-color: #f9f9f9;
 @color-interior: #63d1bb;
 @color-toys: #56c3b2;
-@retina: ~"(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
+@retina: ~"(min-resolution: 144dpi) and (min-width: 1150px), (min-resolution: 1.5dppx) and (min-width: 1150px)";
+@retina-tab: ~"(min-resolution: 1.5dppx) and (min-width: 768px) and (max-width: 1149px), (min-width: 768px) and (max-width: 1149px) and (min-resolution: 144dpi)";
+@retina-mob: ~"(min-resolution: 1.5dppx) and (max-width: 767px), (max-width: 767px) and (min-resolution: 144dpi)";

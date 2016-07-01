@@ -99,9 +99,9 @@
         <div class="main-nav__logo">
           <a href="index.html">
             <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 640px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" alt="" />
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="" height="35" width="86" />
             </picture>
           </a>
         </div>
@@ -117,14 +117,14 @@
           </ul>
           <ul class="main-nav__user-list">
             <li class="main-nav__user-item main-nav__user-item--search">
-              <svg>
+              <svg height="18" width="18">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
               </svg>
               <a class="main-nav__user-link main-nav__user-link--search" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__user-item main-nav__user-item--cart">
               <a class="main-nav__user-link" href="#">Корзина: <span>пока пуста</span></a>
-              <svg>
+              <svg height="18" width="18">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
               </svg>
             </li>
@@ -132,11 +132,11 @@
         </nav>
       </div>
       <section class="header-title">
-        <ul class="sub-nav__list">
-          <li class="sub-menu__item sub-menu__item--visual-desk"><a class="sub-menu__link sub-menu__link--new" href="catalog.html">Новые поступления</a></li>
-          <li class="sub-menu__item sub-menu__item--visual-desk"><a class="sub-menu__link" href="form.html">Распродажа</a></li>
-          <li class="sub-menu__item sub-menu__item--delivery">
-            <p class="sub-menu__delivery-text">Бесплатная доставка по России</p>
+        <ul class="sub-nav">
+          <li class="sub-nav__item sub-nav__item--visual-desk"><a class="sub-nav__link sub-nav__link--new" href="catalog.html">Новые поступления</a></li>
+          <li class="sub-nav__item sub-nav__item--visual-desk"><a class="sub-nav__link" href="form.html">Распродажа</a></li>
+          <li class="sub-nav__item sub-nav__item--delivery">
+            <p class="sub-nav__delivery-text">Бесплатная доставка по России</p>
           </li>
         </ul>
         <h1 class="header-title__title">Милые штуки <br>ручной <br>работы для дома</h1>
@@ -148,43 +148,58 @@
           <div class="catalog__item">
             <div class="catalog__img">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 640px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x">
-                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="">
+                <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="" width="260" height="195" >
               </picture>
             </div>
             <div class="catalog__desc">
               <a class="catalog__desc-title" href="#">Зайчик-попрыгайчик</a>
               <b class="catalog__desc-char">Рост 30 см, вес 200 г</b>
-              <i class="catalog__desc-price">1 200 руб.</i>
+              <div class="catalog__desc-price-wrap">
+                <i class="catalog__desc-price">1 200 руб.</i>
+                <svg class="catalog__desc-img" width="21" height="18">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                </svg>
+              </div>
             </div>
           </div>
           <div class="catalog__item">
             <div class="catalog__img">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 640px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg 2x">
-                <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="">
+                <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="" width="260" height="195">
               </picture>
             </div>
             <div class="catalog__desc">
               <a class="catalog__desc-title" href="#">Корзинка для белья</a>
               <b class="catalog__desc-char">Диаметр 15 см, высота 10 см</b>
-              <i class="catalog__desc-price">690 руб.</i>
+              <div class="catalog__desc-price-wrap">
+                <i class="catalog__desc-price">690 руб.</i>
+                <svg class="catalog__desc-img" width="21" height="18">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                </svg>
+              </div>
             </div>
           </div>
           <div class="catalog__item">
             <div class="catalog__img">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 640px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x">
-                <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="">
+                <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="" width="260" height="195" >
               </picture>
             </div>
             <div class="catalog__desc">
               <a class="catalog__desc-title" href="#">Большая корзинка <br>для игрушек</a>
               <b class="catalog__desc-char">Диаметр 30 см, высота 30 см</b>
-              <i class="catalog__desc-price">1 500 руб.</i>
+              <div class="catalog__desc-price-wrap">
+                <i class="catalog__desc-price">1 500 руб.</i>
+                <svg class="catalog__desc-img" width="21" height="18">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </section>
